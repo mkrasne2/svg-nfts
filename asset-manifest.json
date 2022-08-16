@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/svg-nfts/static/css/main.f7714ba9.css",
+    "main.js": "/svg-nfts/static/js/main.6288a8be.js",
+    "static/media/splash4.png": "/svg-nfts/static/media/splash4.6987429e28ab77087b29.png",
+    "static/media/polygonlogo.png": "/svg-nfts/static/media/polygonlogo.6cde40a9b9119621eb2b.png",
+    "index.html": "/svg-nfts/index.html",
+    "main.f7714ba9.css.map": "/svg-nfts/static/css/main.f7714ba9.css.map",
+    "main.6288a8be.js.map": "/svg-nfts/static/js/main.6288a8be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7714ba9.css",
+    "static/js/main.6288a8be.js"
+  ]
+}
