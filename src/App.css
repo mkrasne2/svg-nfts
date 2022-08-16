@@ -1,38 +1,605 @@
 .App {
+  height: 100vh;
+  background-color: #0d1116;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  margin:0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a {
+color:rgb(201, 141, 193);
+text-decoration: none;
+}
+
+.form-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+table{
+  min-height: 500px;
+}
+
+td{
+  padding-left: 20px;
+}
+
+.inputting{
+  background-color: grey;
+  color:black;
+  
+}
+
+.connect-wallet-container2 {
+ 
+  flex-direction: column;
+  margin: auto;
+  max-width: 550px;
+}
+.container {
+  height: 100%;
+  background-color: #000000;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.otherContainer{
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.nft-name{
+  text-align: center;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.connected-container{
+  
+  text-align:left;
+  margin-left: 75px;
+}
+.title {
+  
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+.subtitle {
+ 
+  color: white;
+ 
+  
+}
+
+.left{
+  text-align: left;
+  margin-left: 10%;
+}
+
+.logo{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.right{
+  display: flex;
+  background: linear-gradient(146deg, #2b2727 25%, #521baca1 50%, #2b2727 75%);
+  border-radius: 16px;
+  padding: 12px 20px;
+  height: 99%;
+  margin-left: 75%;
+  margin-top: 10px;
+}
+
+.content-container {
+  background-color: #a200d6;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.cta-two {
+  height: 200px;
+  width: 300px;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: -webkit-linear-gradient(left, #09e44b, #5f4bce);
+  font-size: 18px;
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin: 20px 10px;
+  border-radius: 20px;
+  padding: 0px 2rem;
+}
+
+.cta-button-two {
+  height: 100px;
+  border: 0;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 550px;
+}
+
+.options-container {
+  display: flex;
+  margin: auto;
+  max-width: 2000px;
+}
+
+.connect-wallet-other {
+ 
+  flex-direction: column;
+  margin: auto;
+  max-width: 550px;
+}
+
+.connect-wallet-container img {
+  padding-bottom: 20px;
+}
+
+.connect-wallet-button {
+  background-image: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 0%,
+    #0b2b0a 21%,
+    #1c751c 52%,
+    #083d0f 78%,
+    #000000 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.mint-container{
+  
+}
+.mint-button {
+  background: -webkit-linear-gradient(left, #09e44b, #5f4bce);
+  font-size: 18px;
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin: 20px 10px;
+  border-radius: 20px;
+  padding: 0px 2rem;
+}
+
+.container{
+  position:relative;
+  overflow-x: auto;
+        overflow-y: auto;
+}
+
+.mint-button:disabled{
+  background: #550072;
+  color: rgb(209, 209, 209);
+  cursor: not-allowed;
+}
+
+.mint-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align:center;
+}
+
+.edit-button{
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 3px;
+  top: 20px;
+  border: 0px;
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.edit-icon{
+  width: 12px;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align:left;
+  
+}
+
+.input-text{
+  text-align:left;
+  margin-left:100px;
+}
+
+input{
+  border: 0;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 26px;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+input::placeholder {
+  color: gray;
+  letter-spacing: 2px;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+
+textarea{
+  border: 0;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 14px;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+textarea::placeholder {
+  color: gray;
+  letter-spacing: 2px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.first-row{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.tld {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  /* left: -70px; */
+  right: 22px;
+  margin: 0;  
+  padding: 0;
+  margin-bottom: 13px;
+}
+
+.mint-list {
+  transform: scale(.6);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.opensea{
+  background-color: #0099cc00;
+  color: #000000;
+  border:none;
+}
+
+.opensea:hover {
+  border: 1px solid #0099cc;
+  background-color: #00aacc;
+  color: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.mint-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #c4b7fa;
+  color: black;
+  margin: 20px 50px;
+  max-width: fit-content;
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Different background-colour for every nth mint-item */
+.mint-item:nth-child(2n) {
+  background-color: lightblue;
+}
+
+.mint-item:nth-child(3n) {
+  background-color: lightpink;
+}
+
+.mint-item:nth-child(5n) {
+  background-color: lightgreen;
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+}
+
+.link-two{
+  color: rgb(235, 161, 235);
+  text-decoration: none;
+  font-style:italic;
+}
+
+.underlined{
+  text-decoration: underline;
+}
+
+.underlined:hover{
+  cursor: pointer;
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.item{
+  padding: 15px;
+  margin-top:10px;
+  color:white;
+  text-decoration:none;
+}
+
+.me-auto{
+  padding-top: 15px;
+}
+
+.thumbButton{
+  background-color:transparent;
+  border-color:transparent;
+}
+
+.thumbButton:hover{
+  cursor: pointer;
+}
+
+.yield-container{
+  padding-top:50px;
+}
+
+.connect-wallet-button-two {
+  background-image: linear-gradient(
+    to right,
+    #0b0820 0%,
+    #551a41 0%,
+    #0f0b47 21%,
+    #5e1147 52%,
+    #1b1616 78%,
+    #08471b 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.play-button {
+  background-image: linear-gradient(
+    to right,
+    #000000 0%,
+    #072209 0%,
+    #0e4716 21%,
+    #22914c 52%,
+    #0d300d 78%,
+    #000000 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.win-button {
+  background-image: linear-gradient(
+    to right,
+    #000000 0%,
+    #0b0722 0%,
+    #170e47 21%,
+    #3a2291 52%,
+    #150d30 78%,
+    #000000 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.stat{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.rules{
+  text-align: left;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 500px;
+}
+
+.etherscan{
+  color:rgb(235, 161, 235);
+  text-decoration: none;
+}
+
+.passive{
+  background-color:rgba(112, 192, 112, 0.61);
+}
+
+.table{
+  width: 100%;
+  height:200px;
+  text-align:left;
+  background-color: rgb(53, 48, 48);
+}
+
+.contribute{
+  margin-left:50%;
+}
+
+.cta-button-two{
+  height: 45px;
+  border: 0;
+  width: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 0%,
+    #0b2b0a 21%,
+    #1c751c 52%,
+    #083d0f 78%,
+    #000000 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  
+}
+
+.cta-button-three{
+  height: 80px;
+  border: 0;
+  width: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left:40%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color:white;
+  background-image: linear-gradient(
+    to right,
+    #100c36 0%,
+    #302069 0%,
+    #5b1ece 21%,
+    #2c96c7 52%,
+    #1a1344 78%,
+    #03030f 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  
 }
