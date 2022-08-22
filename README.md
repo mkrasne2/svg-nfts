@@ -1,6 +1,6 @@
 # About the Generative NFT Project
 
-A few details about this project
+A few details about this NFT project
 
 ## Overview:
 
